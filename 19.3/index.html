@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        .page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.varify-container {
+  border: 5px solid black;
+  height: 30vh;
+  padding: 10vh;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-container input {
+  width: 5vw;
+  height: 10vh;
+  margin: 1rem;
+  font-size: 3rem;
+  border-width: 0.3rem;
+  text-align: center;
+}
+
+.verify-btn {
+  margin-top: 5vh;
+  height: 5vh;
+  width: 5vw;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  border-color: white;
+  box-shadow: 2px 4px 8px black;
+}
+
+input:focus {
+  background-color: lightskyblue;
+}
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="text">
+            <h1>Text to copy:</h1>
+            <p>123456</p>
+        </div>
+        <div class="varify-container">
+            <div class="input-container">
+                <input data-index="0" type="text" autofocus maxlength="1">
+                <input data-index="1" type="text" maxlength="1">
+                <input data-index="2" type="text" maxlength="1">
+                <input data-index="3" type="text" maxlength="1">
+                <input data-index="4" type="text" maxlength="1">
+                <input data-index="5" type="text" maxlength="1">
+            </div>
+            <div>
+                <input class="verify-btn" type="button" value="Verify">
+                <p class="verify-message"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
